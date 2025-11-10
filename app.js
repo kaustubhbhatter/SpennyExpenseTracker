@@ -104,6 +104,7 @@ function updateUIForUser(user) {
     
     document.getElementById('user-display-name').textContent = displayName || 'User';
     document.getElementById('user-photo').src = user.photoURL;
+    console.log(user.photoURL);
     document.getElementById('signin-btn').style.display = 'none';
     closeAuthModal();
 }
